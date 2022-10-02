@@ -1,0 +1,106 @@
+{
+    "blockchainName": "ethereum",
+    "chainId": 1,
+    "contracts": [
+        {
+            "address": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+            "contractName": "ZeroEx",
+            "messages": [
+                {
+                    "mapper": {
+                        "fields": [
+                            {
+                                "label": "Rook address",
+                                "path": "verifyingContract"
+                            },
+                            {
+                                "label": "Buy Token",
+                                "path": "takerToken"
+                            },
+                            {
+                                "label": "Buy Amount",
+                                "path": "takerAmount"
+                            },
+                            {
+                                "label": "Sell Token",
+                                "path": "makerToken"
+                            },
+                            {
+                                "label": "Sell Amount",
+                                "path": "makerAmount"
+                            },
+                            {
+                                "label": "Expiry",
+                                "path": "expiry"
+                            }
+                        ],
+                        "label": "Rook Limit Order"
+                    },
+                    "schema": {
+                        "EIP712Domain": [
+                            {
+                                "name": "chainId",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "name": "verifyingContract",
+                                "type": "address"
+                            },
+                            {
+                                "name": "version",
+                                "type": "string"
+                            }
+                        ],
+                        "RfqOrder": [
+                            {
+                                "name": "expiry",
+                                "type": "uint64"
+                            },
+                            {
+                                "name": "maker",
+                                "type": "address"
+                            },
+                            {
+                                "name": "makerAmount",
+                                "type": "uint128"
+                            },
+                            {
+                                "name": "makerToken",
+                                "type": "address"
+                            },
+                            {
+                                "name": "pool",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "salt",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "taker",
+                                "type": "address"
+                            },
+                            {
+                                "name": "takerAmount",
+                                "type": "uint128"
+                            },
+                            {
+                                "name": "takerToken",
+                                "type": "address"
+                            },
+                            {
+                                "name": "txOrigin",
+                                "type": "address"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "name": "Rook"
+}
