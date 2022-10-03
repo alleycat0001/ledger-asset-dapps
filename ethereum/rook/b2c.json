@@ -1,21 +1,18 @@
 {
-    "blockchainName": "ethereum",
-    "chainId": 1,
-    "contracts": [
-        {
-            "address": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
-            "contractName": "ZeroEx",
-            "selectors": {
-                "0xa8a41c70": {
-                    "erc20OfInterest": [
-                        "makerToken",
-                        "takerToken"
-                    ],
-                    "method": "cancelRfqOrder",
-                    "plugin": "Rook"
-                }
-            }
+  "blockchainName": "ethereum",
+  "chainId": 1,
+  "contracts": [
+    {
+      "address": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+      "contractName": "ZeroEx",
+      "selectors": {
+        "0xdd37ff75": {
+          "erc20OfInterest": ["makerToken", "takerToken"],
+          "method": "cancelRfqOrder",
+          "plugin": "Rook"
         }
-    ],
-    "name": "Rook"
+      }
+    }
+  ],
+  "name": "Rook"
 }
